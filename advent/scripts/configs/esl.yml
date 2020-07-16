@@ -1,0 +1,17 @@
+SOURCE: GTA
+TARGET: Cityscapes
+EXP_NAME: GTA2Cityscapes_ESL
+NUM_WORKERS: 4
+PSEUDO_LABEL_DIRECTORY_TARGET: ../../labels
+TRAIN:
+  MODEL: DeepLabv2
+  RESTORE_FROM: ../../pretrained_models/DeepLab_resnet_pretrained_imagenet.pth
+  MULTI_LEVEL: True
+  LAMBDA_ADV_MAIN: 0.001
+  LAMBDA_ADV_AUX: 0.0002
+TEST:
+  MODE: best
+ESL:
+  THRESHOLD: 0.1
+  RESTORE_FROM: ../../pretrained_models/gta2cityscapes_advent.pth
+  
