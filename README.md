@@ -6,7 +6,7 @@
 [ESL: Entropy-guided Self-supervised Learning for Domain Adaptation in Semantic Segmentation](https://arxiv.org/abs/2006.08658)  
  Antoine Saporta, [Tuan-Hung Vu](https://tuanhungvu.github.io/), [Matthieu Cord](http://webia.lip6.fr/~cord/), [Patrick Pérez](https://ptrckprz.github.io/)  
  valeo.ai, France  
- [IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshop on Scalability in Autonomous Driving, 2020] (https://sites.google.com/view/cvpr20-scalability)
+ [IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshop on Scalability in Autonomous Driving, 2020](https://sites.google.com/view/cvpr20-scalability)
 
 If you find this code useful for your research, please cite our [paper](https://arxiv.org/abs/2006.08658):
 
