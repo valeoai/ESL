@@ -40,8 +40,8 @@ def extract_labels(cfg, model,
 
     max_length = min(cfg.ESL.MAX_MEDIAN_BATCH, len(test_loader))
 
-    predicted_label = np.zeros((min(len(test_loader),max_length), cfg.ESL.OUTPUT_SIZE_TARGET[1], cfg.ESL.OUTPUT_SIZE_TARGET[0]))
-    predicted_entropy = np.zeros((min(len(test_loader),max_length), cfg.ESL.OUTPUT_SIZE_TARGET[1], cfg.ESL.OUTPUT_SIZE_TARGET[0]))
+    predicted_label = np.zeros(max_length, cfg.ESL.OUTPUT_SIZE_TARGET[1], cfg.ESL.OUTPUT_SIZE_TARGET[0]))
+    predicted_entropy = np.zeros(max_length cfg.ESL.OUTPUT_SIZE_TARGET[1], cfg.ESL.OUTPUT_SIZE_TARGET[0]))
 
     image_name = []
 
@@ -82,8 +82,8 @@ def extract_labels(cfg, model,
                     output.save('%s/%s' % (cfg.ESL.OUTPUT_DIR, osp.splitext(name)[0] + ".png"), "PNG")
                 thres = []
                 image_name = []
-                predicted_label = np.zeros((min(len(test_loader),max_length), cfg.ESL.OUTPUT_SIZE_TARGET[1], cfg.ESL.OUTPUT_SIZE_TARGET[0]))
-                predicted_entropy = np.zeros((min(len(test_loader),max_length), cfg.ESL.OUTPUT_SIZE_TARGET[1], cfg.ESL.OUTPUT_SIZE_TARGET[0]))
+                predicted_label = np.zeros(max_length, cfg.ESL.OUTPUT_SIZE_TARGET[1], cfg.ESL.OUTPUT_SIZE_TARGET[0]))
+                predicted_entropy = np.zeros(max_length, cfg.ESL.OUTPUT_SIZE_TARGET[1], cfg.ESL.OUTPUT_SIZE_TARGET[0]))
     thres = []
     for i in range(cfg.NUM_CLASSES):
         x = predicted_entropy[predicted_label==i]
